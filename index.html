@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict_Water_Quality</title>
+</head>
+<body>
+    <form action="{{ url_for('predict')}}" method="POST">
+        ph:  <input type="number" name="ph"><br>
+        Hardness:   <input type="number" name="Hardness"><br>
+        Solids:  <input type="number" name="Solids"><br>
+        Chloramines:  <input type="number" name="Chloramines"><br>
+    	  Sulfate: <input type="number" name="Sulfate"><br>
+	  Conductivity: <input type="number" name="Conductivity"><br>
+	  Organic_carbon : <input type="number" name="Organic_carbon "><br>
+        Trihalomethanes : <input type="number" name="Trihalomethanes"><br>
+	  Turbidity : <input type="number" name="Turbidity"><br>
+
+        <input type=submit    value=Submit><br><br>
+   </form>
+    My prediction:{{predict}}
+</body>
+</html>
